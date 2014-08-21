@@ -1,6 +1,3 @@
----
-output: html_document
----
 Reproducible Research: Peer Assessment 1
 ------------------------------------------
 
@@ -19,7 +16,7 @@ library(scales)
 # The following 2 lines to save the images in the figures directory, other way 
 # would not be necessary and required only do so in the first chunk
 library(knitr)
-opts_chunk$set(fig.path = 'figures/')
+opts_chunk$set(fig.path = 'figures/', fig.align = "center")
 
 # Setting the working directory
 setwd("C:\\Users\\admin\\Desktop\\Coursera\\Reproducible Research\\RepData_PeerAssessment1")  
@@ -80,7 +77,7 @@ histograma <- ggplot(report, aes(x=total)) +
 print(histograma)
 ```
 
-![plot of chunk unnamed-chunk-2](figures/unnamed-chunk-2.png) 
+<img src="figures/unnamed-chunk-2.png" title="plot of chunk unnamed-chunk-2" alt="plot of chunk unnamed-chunk-2" style="display: block; margin: auto;" />
 
 
 From the above calculations, we obtain the following results.
@@ -120,7 +117,7 @@ TimeSeries <- ggplot(report, aes(x=hora, y=mean, group=1)) +
 print(TimeSeries)
 ```
 
-![plot of chunk unnamed-chunk-3](figures/unnamed-chunk-3.png) 
+<img src="figures/unnamed-chunk-3.png" title="plot of chunk unnamed-chunk-3" alt="plot of chunk unnamed-chunk-3" style="display: block; margin: auto;" />
 
 Thus we observe from the data set that, on an average across all the days,
 the __'08:35:00'__ five minute interval contains the maximum number of 
@@ -176,7 +173,7 @@ histograma <- ggplot(newReport, aes(x=total)) +
 print(histograma)
 ```
 
-![plot of chunk unnamed-chunk-5](figures/unnamed-chunk-5.png) 
+<img src="figures/unnamed-chunk-5.png" title="plot of chunk unnamed-chunk-5" alt="plot of chunk unnamed-chunk-5" style="display: block; margin: auto;" />
 
 ```r
 # Calculating the mean and median
@@ -237,7 +234,7 @@ TimeSeries <- ggplot(newReport, aes(x=hora, y=mean, group=1)) +
 print(TimeSeries)
 ```
 
-![plot of chunk unnamed-chunk-6](figures/unnamed-chunk-6.png) 
+<img src="figures/unnamed-chunk-6.png" title="plot of chunk unnamed-chunk-6" alt="plot of chunk unnamed-chunk-6" style="display: block; margin: auto;" />
 
 From the above plot, we observe that there is a higher peak in the number of 
 steps taken, between the `08:00` and `10:00` hrs, (i.e, early morning) on 

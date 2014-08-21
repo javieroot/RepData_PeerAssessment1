@@ -1,5 +1,7 @@
 ---
-output: html_document
+output:
+  html_document:
+    keep_md: yes
 ---
 Reproducible Research: Peer Assessment 1
 ------------------------------------------
@@ -18,7 +20,7 @@ library(scales)
 # The following 2 lines to save the images in the figures directory, other way 
 # would not be necessary and required only do so in the first chunk
 library(knitr)
-opts_chunk$set(fig.path = 'figures/')
+opts_chunk$set(fig.path = 'figures/', fig.align = "center")
 
 # Setting the working directory
 setwd("C:\\Users\\admin\\Desktop\\Coursera\\Reproducible Research\\RepData_PeerAssessment1")  
